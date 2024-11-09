@@ -3,6 +3,7 @@ layout: default
 title: "Devy | API Tools"
 permalink: /
 ---
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -28,11 +29,24 @@ permalink: /
         <input type="text" id="param" placeholder="Enter parameters here (e.g., location)">
         <button onclick="sendRequest()">Send Request</button>
       </div>
-      <!-- Warning for Weather API -->
+      <!-- Weather API Key Input -->
+      <div id="weather-key-container" style="display:none;">
+        <label for="weather-api-key">Enter your OpenWeather API Key:</label>
+        <input type="text" id="weather-api-key" placeholder="API Key" />
+      </div>
+      <!-- Joke Type Selection -->
+      <div id="joke-type-container" style="display:none;">
+        <label for="joke-type">Select Joke Type:</label>
+        <select id="joke-type">
+          <option value="programming">Programming</option>
+          <option value="general">General</option>
+        </select>
+      </div>
+<!-- Warning for Weather API -->
       <div id="key-warning" style="display:none; background-color: #f8d7da; color: #721c24; padding: 10px; margin-top: 10px; border-radius: 5px;">
         <strong>Notice:</strong> The Weather API requires your own API key. Please provide one when making a request.
       </div>
-      <div class="response-container">
+<div class="response-container">
         <div class="response-console">
           <h3>Response Console</h3>
           <pre id="response">Response will appear here...</pre>
@@ -44,6 +58,7 @@ permalink: /
       </div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>

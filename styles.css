@@ -106,3 +106,14 @@
     border-radius: 5px;
   }
   
+  #weather-key-container, #joke-type-container {
+    margin-top: 10px;
+  }
+  
+  #weather-api-key, #joke-type {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
