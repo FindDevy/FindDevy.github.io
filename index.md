@@ -3,6 +3,7 @@ layout: default
 title: "Devy | API Tools"
 permalink: /
 ---
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,6 +21,10 @@ permalink: /
         <li onclick="selectAPI('catfact')">Cat Facts API</li>
         <li onclick="selectAPI('dogfact')">Dog Facts API</li>
         <li onclick="selectAPI('advice')">Advice Slip API</li>
+        <li onclick="selectAPI('country')">Country Data API</li>
+        <li onclick="selectAPI('trivia')">Trivia API</li>
+        <li onclick="selectAPI('kanye')">Kanye Quotes API</li>
+        <li onclick="selectAPI('numbers')">Numbers API</li>
         <li onclick="selectAPI('weather')">Weather API</li>
       </ul>
     </div>
@@ -43,6 +48,11 @@ permalink: /
           <option value="programming">Programming</option>
           <option value="general">General</option>
         </select>
+      </div>
+      <!-- Custom API Request -->
+      <div id="custom-api-container" style="display:none;">
+        <label for="custom-url">Custom API URL:</label>
+        <input type="text" id="custom-url" placeholder="Enter full API URL" />
       </div>
       <!-- Warning for Weather API -->
       <div id="key-warning" style="display:none; background-color: #f8d7da; color: #721c24; padding: 10px; margin-top: 10px; border-radius: 5px;">
